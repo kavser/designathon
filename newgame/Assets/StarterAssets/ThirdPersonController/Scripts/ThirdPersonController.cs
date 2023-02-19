@@ -47,10 +47,13 @@ namespace StarterAssets
         public float FallTimeout = 0.15f;
 		
 		public float DodgeTimeout = 2.0f;
+		public float DodgeSpeed = 100.0f;
 		
 		public float InvulnerabilityTime = 0.50f;
 		
 		public float AttackTimeout = 0.5f;
+		
+		public bool isAttacking;
 
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -82,6 +85,7 @@ namespace StarterAssets
         public bool LockCameraPosition = false;
 
 		public PlayerManager playerManager;
+		public BossManager bossManager;
 		
 		public Animator animator;
 
@@ -304,6 +308,8 @@ namespace StarterAssets
 			{
 				if(_input.dodge && _dodgeTimeoutDelta==0.0f)
 				{	
+					//on dodge
+					_speed=DodgeSpeed;
 					playerManager.isVulnerable=false;
 					_input.dodge=false;
 					_dodgeTimeoutDelta=0.01f;
@@ -332,7 +338,7 @@ namespace StarterAssets
 				if(_input.attack && _attackTimeoutDelta==0.0f)
 				{	
 					//on attack
-					MoveSpeed-=5.0f;
+					isAttacking=true;
 					_input.attack=false;
 					_attackTimeoutDelta=0.01f;
 					if (_hasAnimator)
@@ -344,8 +350,16 @@ namespace StarterAssets
 			}
 			else
 			{
+				isAttacking=false;
 				_input.attack=false;
 				if(_attackTimeoutDelta>0)_attackTimeoutDelta=0.0f;
+			}
+		}
+		private void OnTriggerEnter(Collider other)
+		{
+			if(isAttacking==true)
+			{
+				bossManager.dead=true;
 			}
 		}
         private void JumpAndGravity()
