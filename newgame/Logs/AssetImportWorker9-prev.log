@@ -1,0 +1,449 @@
+Unity Editor version:    2021.3.19f1 (c9714fde33b6)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.2 (Build 22D49)
+Darwin version:          22.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker9
+-projectPath
+/Users/chrissharma/Documents/GitHub/designathon/newgame
+-logFile
+Logs/AssetImportWorker9.log
+-srvPort
+61441
+Successfully changed project path to: /Users/chrissharma/Documents/GitHub/designathon/newgame
+/Users/chrissharma/Documents/GitHub/designathon/newgame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8791851264] Host "[IP] 10.0.0.243 [Port] 0 [Flags] 2 [Guid] 3159824186 [EditorId] 3159824186 [Version] 1048832 [Id] OSXEditor(0,Chriss-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8791851264] Host "[IP] 10.0.0.243 [Port] 0 [Flags] 2 [Guid] 3159824186 [EditorId] 3159824186 [Version] 1048832 [Id] OSXEditor(0,Chriss-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 121.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/chrissharma/Documents/GitHub/designathon/newgame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56677
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.19f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001900 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 123.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.442 seconds
+Domain Reload Profiling:
+	ReloadAssembly (442ms)
+		BeginReloadAssembly (48ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (332ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (62ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (123ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005942 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/chrissharma/Documents/GitHub/designathon/newgame/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/chrissharma/Documents/GitHub/designathon/newgame/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 132.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Domain Reload Profiling:
+	ReloadAssembly (968ms)
+		BeginReloadAssembly (51ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (845ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (219ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (474ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (132ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6968 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 172 unused Assets / (10.7 MB). Loaded Objects now: 7315.
+Memory consumption went from 335.1 MB to 324.4 MB.
+Total: 4.547167 ms (FindLiveObjects: 0.230083 ms CreateObjectMapping: 0.084292 ms MarkObjects: 2.732916 ms  DeleteObjects: 1.499333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 64413.454200 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/WallArt_Apt_02.mat
+  artifactKey: Guid(9fe643e01fee71e4e8eb0fdd60b24118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/WallArt_Apt_02.mat using Guid(9fe643e01fee71e4e8eb0fdd60b24118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825c269c580066810af01c498e929ad7') in 0.110247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 208.565959 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Interior Exterior/Int_Apt_03.mat
+  artifactKey: Guid(8d06d0f3581549d4fb32fda8991db882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Interior Exterior/Int_Apt_03.mat using Guid(8d06d0f3581549d4fb32fda8991db882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500eb2bfd8794446f5ae897edd642741') in 0.026541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.079890 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/keyboard_01.mat
+  artifactKey: Guid(82dc13826f8c00040b92c94337944a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/keyboard_01.mat using Guid(82dc13826f8c00040b92c94337944a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec0cd27101d7a776a317eb33617e652') in 0.010639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.020897 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Lamp 02 Ceiling.mat
+  artifactKey: Guid(c4401e5b03b52de47b786ae0f6002794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Lamp 02 Ceiling.mat using Guid(c4401e5b03b52de47b786ae0f6002794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f567bc066bd9ca0bd9b5fb9ce4682452') in 0.008015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.029434 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Lamp 02 Shade - On.mat
+  artifactKey: Guid(71e62a5ab55406f4aada84fe885d47b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Lamp 02 Shade - On.mat using Guid(71e62a5ab55406f4aada84fe885d47b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324c338b59277e7727cccbb9c015d535') in 0.005494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.756343 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Lamp 02 Table.mat
+  artifactKey: Guid(ef49c0bd94883b4498c46a5c772544b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Lamp 02 Table.mat using Guid(ef49c0bd94883b4498c46a5c772544b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13477f5911476f2fe979834df0d158eb') in 0.014721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.019187 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/LampShadeFabric_On.mat
+  artifactKey: Guid(625ca8b0c9507cd4d8685b336560db6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/LampShadeFabric_On.mat using Guid(625ca8b0c9507cd4d8685b336560db6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f282e480fa8471458e6dca3c94a43d8b') in 0.008210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.016776 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Leather_02.mat
+  artifactKey: Guid(6b037e7c427c8fc478dce6529e818f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Leather_02.mat using Guid(6b037e7c427c8fc478dce6529e818f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a25effd290f6169dcec9f3d98f95a24e') in 0.019604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.163381 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Models/Bathroom_Corner_Tiles.fbx
+  artifactKey: Guid(d265ac661f1c8d64386d043a4b4b8f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Models/Bathroom_Corner_Tiles.fbx using Guid(d265ac661f1c8d64386d043a4b4b8f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db029bdba13ffda42c96008387768f52') in 0.080494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.762106 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Mirror.mat
+  artifactKey: Guid(bbc4e18e895e99a468291c41300b3f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Mirror.mat using Guid(bbc4e18e895e99a468291c41300b3f55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53391b4c8c4fc38eb6aba0c7aad5b803') in 0.010839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 201.727295 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/BR_Tile_02.mat
+  artifactKey: Guid(10c8542d4324afc4bb4d61e51e00800e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/BR_Tile_02.mat using Guid(10c8542d4324afc4bb4d61e51e00800e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b736f901ac4bab622f072a5320cf49') in 0.016838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.479074 seconds.
+  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Legacy/Brick mute 02.mat
+  artifactKey: Guid(099e69089d2c47044b06273bff53533d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Legacy/Brick mute 02.mat using Guid(099e69089d2c47044b06273bff53533d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df07d0a8aa326bd06fae0cfde0579c48') in 0.057804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.487195 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Brushed Metal_Antique.mat
+  artifactKey: Guid(5f469581b50505747a410deecdf8f11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Brushed Metal_Antique.mat using Guid(5f469581b50505747a410deecdf8f11d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e3e222e0a1018f2762a653ffb059db') in 0.013628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.033527 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Brushed Metal_Chrome.mat
+  artifactKey: Guid(4580dd49916b3c542b97109c8ca425f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Brushed Metal_Chrome.mat using Guid(4580dd49916b3c542b97109c8ca425f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4597af34ad0b64f58a68fdfbb3ba38b2') in 0.007385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012815 seconds.
+  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Legacy/Building Floor Tile.mat
+  artifactKey: Guid(b65d6f1427086d84f91a3153f6f82ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Legacy/Building Floor Tile.mat using Guid(b65d6f1427086d84f91a3153f6f82ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd686bc5c104decd3e8cf6e9aec8ea153') in 0.009162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.611436 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Canvas_Painting_01.mat
+  artifactKey: Guid(5c4d526e95a945e46abbe1645a318634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Canvas_Painting_01.mat using Guid(5c4d526e95a945e46abbe1645a318634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378a8409af1b7502600bb6008df38f6e') in 0.015957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.068074 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/CastIron_01.mat
+  artifactKey: Guid(27f834cdb4589be48903c1e529e09c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/CastIron_01.mat using Guid(27f834cdb4589be48903c1e529e09c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf11961c82da27468a8a6a2eb1b770a') in 0.012260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065924 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Colors_apt_01.mat
+  artifactKey: Guid(ef29f2ebae532ed4291b1e9ad9cc45a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Colors_apt_01.mat using Guid(ef29f2ebae532ed4291b1e9ad9cc45a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ae47bf3798a7e6674b6b84116c8a37') in 0.007618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070774 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Controller Screen_01.mat
+  artifactKey: Guid(a89efc085b210d34fb9c6f0b7b0f669a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Controller Screen_01.mat using Guid(a89efc085b210d34fb9c6f0b7b0f669a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f1ad53479bdfc30b8887b5cf9bed66') in 0.007734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.349026 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Controller_01_A.mat
+  artifactKey: Guid(89d75b733df5ca74d837222e4a8a1b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/Controller_01_A.mat using Guid(89d75b733df5ca74d837222e4a8a1b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31eba1627be61b01b950611e59fa82fd') in 0.012547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.159385 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/CounterTop_01.mat
+  artifactKey: Guid(656eb32607aaaed4590ee8c05d00282f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/CounterTop_01.mat using Guid(656eb32607aaaed4590ee8c05d00282f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76aaa2d6d1c2a330e64777d87da1662e') in 0.017629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.561967 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/DoorMat_01.mat
+  artifactKey: Guid(cca629179fca3a14ab08d0f1cc0ecce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Misc/DoorMat_01.mat using Guid(cca629179fca3a14ab08d0f1cc0ecce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd5a1196cdf7a3ceace90e598a1659ef') in 0.013512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.387117 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Interior Exterior/Ext_Apt_01.mat
+  artifactKey: Guid(05ab6237a2436a34bb31bebcb35225c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Interior Exterior/Ext_Apt_01.mat using Guid(05ab6237a2436a34bb31bebcb35225c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b2c3124452408c85ee3a2cd976914a') in 0.047217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.925295 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Fabric_01_White.mat
+  artifactKey: Guid(7f1d2f122bc99854b95672cfb7d080fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Fabric_01_White.mat using Guid(7f1d2f122bc99854b95672cfb7d080fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f610daf62676eaf0a813519cc251ee') in 0.015959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.536117 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Color_Lime.mat
+  artifactKey: Guid(33ecdea59ca45c24b9402b2278ad7161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Color_Lime.mat using Guid(33ecdea59ca45c24b9402b2278ad7161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7ffb63f082032889a4f66b5859b7e3') in 0.010574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024027 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Color_Turq.mat
+  artifactKey: Guid(6147ae41bc501ae42a2d353507d28e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Color_Turq.mat using Guid(6147ae41bc501ae42a2d353507d28e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18526ce7e28fda77034decacf52576ae') in 0.005911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036971 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_FD_Light.mat
+  artifactKey: Guid(e477bfc1e66d67442860ffdbe09525c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_FD_Light.mat using Guid(e477bfc1e66d67442860ffdbe09525c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927799b05070a509f099999dabe0c3f2') in 0.006874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.505465 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Keypad.mat
+  artifactKey: Guid(ab59fbba5f97c1448a0044a4a6f327f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Keypad.mat using Guid(ab59fbba5f97c1448a0044a4a6f327f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c816bcb0c57a40ab6cd637b236ee61') in 0.009949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023665 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Kiosk_Panel.mat
+  artifactKey: Guid(9303e0c46e46b0a478c8d3380a76c182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Kiosk_Panel.mat using Guid(9303e0c46e46b0a478c8d3380a76c182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55fa6d680be4919b7715e66b88249387') in 0.005646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.104170 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Leather_01.mat
+  artifactKey: Guid(32032d56aec3af241ae80a544319f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Leather_01.mat using Guid(32032d56aec3af241ae80a544319f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7bc083408cd123d75de1fb7668d5018') in 0.012623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.351956 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Leather_03.mat
+  artifactKey: Guid(6bdddb5dfcd698846858ad400badc2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_Leather_03.mat using Guid(6bdddb5dfcd698846858ad400badc2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bd0c01c30ed60376ecbcf4778c3b75f') in 0.013981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025349 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_POS_Display_01.mat
+  artifactKey: Guid(1c691715df2c75649babacc6f27c3c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_POS_Display_01.mat using Guid(1c691715df2c75649babacc6f27c3c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b47dd0ab3f0a4d4bb0d6cb0489e15d') in 0.008287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.063069 seconds.
+  path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_RoughMetal_01.mat
+  artifactKey: Guid(743aab621a0e2f14d81ba0058a0aa7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Fast Food Restaurant Kit/Common/Materials/FFK_RoughMetal_01.mat using Guid(743aab621a0e2f14d81ba0058a0aa7c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9343b1517483ac4bb469b5a7f07b82') in 0.007901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.869518 seconds.
+  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Fire/Fire_Add_02.mat
+  artifactKey: Guid(0fdd751cd86106446afa0dc09e0eeb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Fire/Fire_Add_02.mat using Guid(0fdd751cd86106446afa0dc09e0eeb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d8951f28350e66695481a1a9219a19') in 0.022104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021911 seconds.
+  path: Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Fire/Fire_Alpha_02.mat
+  artifactKey: Guid(fafce5ad41639d14d9cfadc181485ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/_BPS Basic Assets/Common/Materials/Fire/Fire_Alpha_02.mat using Guid(fafce5ad41639d14d9cfadc181485ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2269b90f58b6cada61ebf4765bab8f75') in 0.006304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.109111 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Glass Wine Bottle 05.mat
+  artifactKey: Guid(faedf01a9e7977749a7798016f508081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Glass Wine Bottle 05.mat using Guid(faedf01a9e7977749a7798016f508081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f27820f5a73befc251b94169a9f2b31') in 0.008517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.225653 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Glass_Dark.mat
+  artifactKey: Guid(cc90876a24c95974baf293258366d22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Glass_Dark.mat using Guid(cc90876a24c95974baf293258366d22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eee3ad533f8f1bf4c2e11a7fe980c7c') in 0.034104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.088666 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Shiny Metal_02.mat
+  artifactKey: Guid(b73dbd0dbafdfa944ac875a3b40515e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Shiny Metal_02.mat using Guid(b73dbd0dbafdfa944ac875a3b40515e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4997f2e9ca1aacebaf0e4bf49803f20f') in 0.008546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Shiny Metal_03.mat
+  artifactKey: Guid(ff2bb81a45899464db5313ff275f8a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Brick Project Studio/Apartment Kit/Common/Materials/Surface/Shiny Metal_03.mat using Guid(ff2bb81a45899464db5313ff275f8a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba1e21de0099e2313d57e3d285bed64') in 0.006702 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001897 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16c4e3000 may have been prematurely finalized
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Symbol file LoadedFromMemory doesn't match image /Users/chrissharma/Documents/GitHub/designathon/newgame/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/chrissharma/Documents/GitHub/designathon/newgame/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.955 seconds
+Domain Reload Profiling:
+	ReloadAssembly (955ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (126ms)
+		EndReloadAssembly (696ms)
+			LoadAssemblies (52ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (248ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (321ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
