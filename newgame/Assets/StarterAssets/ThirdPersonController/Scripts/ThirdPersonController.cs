@@ -49,6 +49,8 @@ namespace StarterAssets
 		public float DodgeTimeout = 2.0f;
 		
 		public float InvulnerabilityTime = 0.50f;
+		
+		public float AttackTimeout = 0.5f;
 
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -80,6 +82,8 @@ namespace StarterAssets
         public bool LockCameraPosition = false;
 
 		public PlayerManager playerManager;
+		
+		public Animator animator;
 
         // cinemachine
         private float _cinemachineTargetYaw;
@@ -97,6 +101,7 @@ namespace StarterAssets
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
 		private float _dodgeTimeoutDelta;
+		private float _attackTimeoutDelta;
 
         // animation IDs
         private int _animIDSpeed;
@@ -104,6 +109,7 @@ namespace StarterAssets
         private int _animIDJump;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
+		private int _animIDAttack;
 
 #if ENABLE_INPUT_SYSTEM 
         private PlayerInput _playerInput;
@@ -167,6 +173,7 @@ namespace StarterAssets
             GroundedCheck();
             Move();
 			Dodge();
+			Attack();
         }
 
         private void LateUpdate()
@@ -181,6 +188,7 @@ namespace StarterAssets
             _animIDJump = Animator.StringToHash("Jump");
             _animIDFreeFall = Animator.StringToHash("FreeFall");
             _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+			_animIDAttack = Animator.StringToHash("Attack");
         }
 
         private void GroundedCheck()
@@ -297,7 +305,6 @@ namespace StarterAssets
 				if(_input.dodge && _dodgeTimeoutDelta==0.0f)
 				{	
 					playerManager.isVulnerable=false;
-					Debug.Log("woo");
 					_input.dodge=false;
 					_dodgeTimeoutDelta=0.01f;
 					if (_hasAnimator)
@@ -306,12 +313,39 @@ namespace StarterAssets
 						}
 				}
 				if(_dodgeTimeoutDelta>0)_dodgeTimeoutDelta += Time.deltaTime;
-				if(_dodgeTimeoutDelta>InvulnerabilityTime){playerManager.isVulnerable=true;Debug.Log("pooooo");}
+				if(_dodgeTimeoutDelta>InvulnerabilityTime)playerManager.isVulnerable=true;
 			}
 			else
 			{
 				_input.dodge=false;
 				if(_dodgeTimeoutDelta>0)_dodgeTimeoutDelta=0.0f;
+			}
+		}
+		private void Attack()
+		{
+			if (_hasAnimator)
+                    {
+                        _animator.SetBool(_animIDAttack, false);
+                    }
+			if(_attackTimeoutDelta <= AttackTimeout)
+			{
+				if(_input.attack && _attackTimeoutDelta==0.0f)
+				{	
+					//on attack
+					MoveSpeed-=5.0f;
+					_input.attack=false;
+					_attackTimeoutDelta=0.01f;
+					if (_hasAnimator)
+						{
+							_animator.SetBool(_animIDAttack, true);
+						}
+				}
+				if(_attackTimeoutDelta>0)_attackTimeoutDelta += Time.deltaTime;
+			}
+			else
+			{
+				_input.attack=false;
+				if(_attackTimeoutDelta>0)_attackTimeoutDelta=0.0f;
 			}
 		}
         private void JumpAndGravity()
