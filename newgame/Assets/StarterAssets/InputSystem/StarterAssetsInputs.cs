@@ -12,6 +12,7 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		public bool dodge;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -33,7 +34,12 @@ namespace StarterAssets
 				LookInput(value.Get<Vector2>());
 			}
 		}
-
+		
+		public void OnDodge(InputValue value)
+		{
+			DodgeInput(value.isPressed);
+		}
+		
 		public void OnJump(InputValue value)
 		{
 			JumpInput(value.isPressed);
@@ -54,6 +60,11 @@ namespace StarterAssets
 		public void LookInput(Vector2 newLookDirection)
 		{
 			look = newLookDirection;
+		}
+		
+		public void DodgeInput(bool newDodgeState)
+		{
+			dodge = newDodgeState;
 		}
 
 		public void JumpInput(bool newJumpState)

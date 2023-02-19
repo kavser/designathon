@@ -24,7 +24,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "Dodge",
                     "type": "Button",
                     "id": "8c4abdf8-4099-493a-aa1a-129acec7c3df",
                     "expectedControlType": "Button",
@@ -181,8 +181,13 @@
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
+<<<<<<< Updated upstream
                     "groups": "Gamepad",
                     "action": "Jump",
+=======
+                    "groups": "KeyboardMouse",
+                    "action": "Dodge",
+>>>>>>> Stashed changes
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -192,8 +197,13 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
+<<<<<<< Updated upstream
                     "groups": "KeyboardMouse",
                     "action": "Jump",
+=======
+                    "groups": "Gamepad",
+                    "action": "Dodge",
+>>>>>>> Stashed changes
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

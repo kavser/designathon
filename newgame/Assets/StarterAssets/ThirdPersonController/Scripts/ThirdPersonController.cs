@@ -45,6 +45,10 @@ namespace StarterAssets
 
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
         public float FallTimeout = 0.15f;
+		
+		public float DodgeTimeout = 2.0f;
+		
+		public float InvulnerabilityTime = 0.50f;
 
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
@@ -75,6 +79,8 @@ namespace StarterAssets
         [Tooltip("For locking the camera position on all axis")]
         public bool LockCameraPosition = false;
 
+		public PlayerManager playerManager;
+
         // cinemachine
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
@@ -90,6 +96,7 @@ namespace StarterAssets
         // timeout deltatime
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
+		private float _dodgeTimeoutDelta;
 
         // animation IDs
         private int _animIDSpeed;
@@ -159,6 +166,7 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+			Dodge();
         }
 
         private void LateUpdate()
@@ -210,7 +218,7 @@ namespace StarterAssets
             CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride,
                 _cinemachineTargetYaw, 0.0f);
         }
-
+		
         private void Move()
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
@@ -278,7 +286,34 @@ namespace StarterAssets
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
         }
-
+		private void Dodge()
+        {
+			if (_hasAnimator)
+                    {
+                        _animator.SetBool(_animIDJump, false);
+                    }
+			if(_dodgeTimeoutDelta <= DodgeTimeout)
+			{
+				if(_input.dodge && _dodgeTimeoutDelta==0.0f)
+				{	
+					playerManager.isVulnerable=false;
+					Debug.Log("woo");
+					_input.dodge=false;
+					_dodgeTimeoutDelta=0.01f;
+					if (_hasAnimator)
+						{
+							_animator.SetBool(_animIDJump, true);
+						}
+				}
+				if(_dodgeTimeoutDelta>0)_dodgeTimeoutDelta += Time.deltaTime;
+				if(_dodgeTimeoutDelta>InvulnerabilityTime){playerManager.isVulnerable=true;Debug.Log("pooooo");}
+			}
+			else
+			{
+				_input.dodge=false;
+				if(_dodgeTimeoutDelta>0)_dodgeTimeoutDelta=0.0f;
+			}
+		}
         private void JumpAndGravity()
         {
             if (Grounded)
