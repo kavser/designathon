@@ -181,13 +181,8 @@
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
-<<<<<<< Updated upstream
                     "groups": "Gamepad",
-                    "action": "Jump",
-=======
-                    "groups": "KeyboardMouse",
                     "action": "Dodge",
->>>>>>> Stashed changes
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -197,13 +192,8 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-<<<<<<< Updated upstream
                     "groups": "KeyboardMouse",
-                    "action": "Jump",
-=======
-                    "groups": "Gamepad",
                     "action": "Dodge",
->>>>>>> Stashed changes
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
