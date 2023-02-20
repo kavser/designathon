@@ -5,17 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class BossManager : MonoBehaviour
 {
-	
-	public bool dead;
+
+    public bool dead;
     // Start is called before the first frame update
     void Start()
     {
-        dead=false;
+        dead = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+  
+
 }

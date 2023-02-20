@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 1f0479f0602c74be4a92834431c9f151, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -7091,7 +7091,7 @@ PrefabInstance:
       objectReference: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
     - target: {fileID: 4860494749315855355, guid: 5ab15c8499a2546499ed4699885de0d2, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: 
+      value: Gamepad
       objectReference: {fileID: 0}
     - target: {fileID: 5203947390342474061, guid: 5ab15c8499a2546499ed4699885de0d2, type: 3}
       propertyPath: m_RootOrder
